@@ -1,4 +1,4 @@
-import os
+dddimport os
 import streamlit as st
 from google import genai
 from google.genai import types
@@ -70,7 +70,7 @@ for mensagem in st.session_state.historico:
     with st.chat_message(mensagem["role"]):
         st.markdown(mensagem["content"])
 
-entrada_usuario = st.chat_input("igite sua pergunta: ")
+entrada_usuario = st.chat_input("Digite sua pergunta: ")
 
 if entrada_usuario:
     st.session_state.historico.append(
